@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white; /* Set the text color to white */
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background-color: #333;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: moveBall 2s infinite linear;
+}
+
+.paddle {
+    width: 10px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+}
+
+#leftPaddle {
+    left: 10px;
+}
+
+#rightPaddle {
+    right: 10px;
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 80px); /* Center the score display */
+    font-size: 20px;
+}
