@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Game/Test</title>
+</head>
+<body>
+    <form action="https://digitalmedialab.altervista.org/submit_game.php" method="post">
+        <p>Your Name: <input type="text" name="name" required></p>
+        <p>Your Email: <input type="email" name="email" required></p>
+ <hr>
+        <!-- Dropdown List -->
+
+        <p>Question 1: 
+          <select name="question1">
+            <option value="A">Option A</option>
+            <option value="B">Option B</option>
+            <option value="C">Option C</option>
+        </select>
+		</p>
+
+        <!-- Radio Button -->
+        <p>Question 2:
+            <input type="radio" name="question2" value="A" required> A
+            <input type="radio" name="question2" value="B"> B
+            <input type="radio" name="question2" value="C"> C
+        </p>
+
+        <!-- Checkbox -->
+        <p>Question 3:
+            <input type="checkbox" name="question3[]" value="A"> A
+            <input type="checkbox" name="question3[]" value="B"> B
+            <input type="checkbox" name="question3[]" value="C"> C
+        </p>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
